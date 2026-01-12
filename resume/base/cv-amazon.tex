@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper,sans, colorlinks]{moderncv}
+
+\moderncvcolor{black}
+\moderncvstyle{banking}
+
+
+\usepackage[scale=0.86, top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+\recomputelengths
+
+\usepackage{fontawesome}
+\usepackage{wasysym}
+\usepackage{fontspec}
+
+%Select fonts
+\setsansfont[Ligatures=TeX, Numbers=OldStyle]{Concourse T3 Tab}
+
+\firstname{Nikhil}
+\familyname{N}
+
+\title{CV}
+\address{Software Development Engineer 3}
+\mobile{+917676295696} 
+\email{chintun1988@gmail.com}
+\AtBeginDocument{
+    \hypersetup{colorlinks,urlcolor=purple}
+}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{-12 mm}
+
+\section{Summary}
+
+\small{A software engineer experienced in building high quality software products and solutions from end to end and capable of working in a fast paced dynamic environments. I am interested in developing scalable, performant, high quality frontend and backend applications.}
+
+\section{Education}
+
+\cventry{}{}{International Institute of Information Technology, Bangalore}{M.Tech, Information Technology}{}{}
+\vspace{-4.5 mm}
+\cvitem{\small{Key Courses}}{\small{Algorithms, Data Structures, Operating Systems, Object Oriented Analysis and Design, Database Systems}\normalsize{}}
+\cvdoubleitem{Scores}{3.37/4}{Awards}{Directors merit list student}
+
+\section{Interests \& Expertise}
+
+\begin{itemize}
+\item Interested in learning new innovations in software systems design which focuses on scale and performance.
+\item Interested in design and implementation of software products from end to end (frontend and backend)
+\item Interested in learning new trends in design of large scale distributed systems.
+\item Experienced in developing full stack web and mobile applications.
+\item Experienced in developing cross platform mobile applications with focus on quality and reuseability.
+\item Experienced in leading small teams \& mentoring team members, contributing to technology, product \& process initiatives.
+\end{itemize}
+
+\section{Skills}
+\cvitem{Languages}{C, C++, Java, Javascript}
+\cvitem{\small{Libraries \& Frameworks}}{\small{Reactjs, mobx, Spring}\normalsize{}}
+\cvitem{Databases}{MySQL, DynamoDB}
+\cvitem{Tools}{Maven, Gradle \& CMake}
+\cvitem{Version Control}{Perforce \& GIT}
+
+
+\section{Experience}
+
+\cventry{March, 2015 -- Present}{Computer Scientist}{Adobe}{Bengaluru, India}{}{}\normalsize\vspace{-2mm}
+
+\begin{itemize}
+\item \textbf{Adobe Notification System (ANS)} : ANS lets Adobe apps \& services deliver device-oriented notifications to Adobe users reliably across desktop, web and mobile in real-time with minimal integration effort. It's been extensively used by more than 65+ adobe creative, experience and document cloud products. I currently own various features which include sending Group Notifications, Delivery pipeline, real time alerts, localisation support. I have also redesigned and implemented the frontend for the service in reactjs and redux to cater to experience cloud use cases. Technologies: Java, Amazon Web Services (DynamoDB, S3, SNS, Lambda, SQS, RDS, CloudWatch etc), Spring framework, Netflix open source libraries (Hystrix), Redis.
+\item \textbf{Project Gemini} : Gemini is a next generation drawing and painting app that combines the capabilites of both Adobe Draw and Adobe Sketch. I worked on a backend service that converts Draw and Sketch projects into Gemini compatible format. Handling this conversion at a large scale and outburst traffic patterns was a challenge to solve.
+\item \href{https://play.google.com/store/apps/details?id=com.adobe.creativeapps.draw}{\faAndroid\hspace{1mm}Adobe Draw}: A professional painting and drawing from adobe trageted for large handheld devices like tablets. I worked on core features like drawing editor, brush and toolbar panels, layers editor, projects organiser, synchronising assets with Creative Cloud.
+\item \href{https://play.google.com/store/apps/details?id=com.adobe.creativeapps.shape}{\faAndroid\hspace{1mm}Adobe Shape}: Design and implementation of major portions of the app. Interacting with the shape generation library and workflows to save generated assets to Creative Cloud were the major contributions.
+\end{itemize}
+
+\cventry{August, 2014 -- Feb, 2015}{MTS 2}{\textsc{NetApp}}{Bengaluru, India}{}{}\normalsize\vspace{-2mm}
+\begin{itemize}
+\item Software developer working in Flex Array Virtualization (FAV)
+team.
+\item Work involved in developing storage stack which virtualizes and allows customers to attach third party storage systems to our storage system.
+\end{itemize}
+
+\cventry{July, 2012 -- July, 2014}{Software Developer}{\textsc{Texas Instruments}}{Bengaluru, India}{}{}\normalsize{}\vspace{-2mm}
+\begin{itemize}
+\item A software framework developer for the next generation TI SOC platforms
+\item The framework allows customers to quickly prototype and evaluate vision algorithms and create custom data flows involving Video capture, Video Processing and Video Display.
+\item Worked extensively in developing plug and play components in C/C++.
+\end{itemize}
+\cventry{\small{Feb, 2012 -- June, 2012}}{\small{Software Development Intern, IBM India Software Labs}}{IBM}{Bengaluru, India}{}{}\normalsize{}
+Worked in AIX Performance tools development team. I was involved in developing tools that display statistics related to the four main subsystems of AIX operating system namely CPU, Memory, Disk and Network.
+
+
+\end{document}

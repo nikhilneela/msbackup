@@ -1,0 +1,10 @@
+sudo add-apt-repository ppa:texlive-backports
+sudo apt-get install texlive
+sudo apt-get --no-install-recommends install texlive-latex-extra
+sudo mkdir -p /usr/local/share/texmf/tex/latex/moderncv
+[Copy all .sty and .cls files present in deps folder into this path]
+sudo cp *.sty *.cls -t /usr/local/share/texmf/tex/latex/moderncv/
+sudo apt-get install texworks
+sudo apt-get install texlive-xetex
+sudo apt install texlive-fonts-extra
+sudo cp deps/fonts /usr/share/fonts/ 

@@ -1,0 +1,31 @@
+I have been working in Adobe from the past 2+ years.
+At Adobe, I am working on developing Android apps.
+Have been working on a professional painting and drawing app called Illustrator Draw.
+It's an Award winning and highly rated (4.2) app on the playstore competing with other paid apps.
+Coming to my contributions to this app,
+
+1. I have been working on this app right from it's inception
+2. I divide my contributions into the following
+   1. UI/UX design implementation
+   		1. Launch screens
+   		2. Organizer (Commom UI)
+   		3. Document Editor screens (Toolbars, Layers Editor)
+   		4. Color picker
+   		5. Workflows like signing in, share to other apps and so on
+   	2.  Graphics related work
+   		The core part of our app has been written in C++ for consistency and reuseability purposes
+   		For example, Our app interacts with the underlying C++ library for generating strokes and rendering
+   		them to the screen. A whole lot of work is done in native and wrappers for them are written
+   		in Java (using JNI). I primarily worked in mainpulating
+   			1. Layers
+   			2. Tools like brushes
+   			3. Grids and Guides
+   	3.  Sync workflows
+   	    Our app is a highly cloud centric app meaning all user assets are stored in Cloud (Creative Cloud)
+   	    There was a good amount of work done in developing workflows around syncing the assets between the
+   	    client device and cloud
+   	4. Regular engineering tasks
+   	   1. Some knowledge on Jenkins and CI, SonarQube and Test automation
+
+
+

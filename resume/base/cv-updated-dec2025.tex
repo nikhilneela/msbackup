@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper,sans, colorlinks]{moderncv}
+\usepackage{xcolor}
+\newcommand{\designation}[1]{\large{#1}}
+
+\moderncvcolor{black}
+\moderncvstyle{banking}
+
+
+\usepackage[scale=1, top=0.5cm, bottom=0.5cm, left=1.2cm, right=1.2cm]{geometry}
+\recomputelengths
+
+\usepackage{fontawesome5}
+\usepackage{wasysym}
+\usepackage{fontspec}
+
+%Select fonts
+\setsansfont[Ligatures=TeX, Numbers=OldStyle]{Concourse T3 Tab}
+
+\firstname{Nikhil}
+\familyname{Neela}
+
+\title{Resume}
+\address{Backend Software Engineer}
+\mobile{+919972059922} 
+\email{nikhilneela@gmail.com}
+\social[linkedin][www.linkedin.com/in/nikhilneela]{nikhilneela}
+\AtBeginDocument{
+    \hypersetup{colorlinks,urlcolor=purple}
+}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{-12 mm}
+
+\section{Summary}
+
+\small{Software engineer with 13+ years building large-scale distributed systems at Microsoft and Adobe. Specialized in backend architecture, high-availability systems, and zero-downtime migrations at cloud scale. Led critical infrastructure initiatives serving 100K+ customers and 1M+ resources. }
+
+\section{Education}
+
+\cventry{}{}{International Institute of Information Technology, Bangalore}{M.Tech, Computer Science}{}{}
+\vspace{-4.5 mm}
+\cvitem{\small{Key Courses}}{\small{Algorithms, Data Structures, Operating Systems, Object Oriented Analysis and Design, Database Systems}\normalsize{}}
+
+\section{Interests \& Expertise}
+
+\begin{itemize}
+\item \textbf{Distributed Systems}: High-availability architecture, data consistency, sharding strategies
+\item \textbf{Backend Technologies}: C\#.NET, Java, REST APIs, microservices
+\item \textbf{Cloud Platforms}: Azure (App Service, DNS, SQL), AWS (DynamoDB, SQS, Lambda)
+\item \textbf{System Design}: Scalability patterns, zero-downtime deployments, observability
+\item \textbf{Software Engineering}: Design patterns, SOLID principles
+\end{itemize}
+
+\section{Experience}
+
+\cventry{March, 2020 -- Present}{\designation{Senior Software Engineer (L64)}}{\Large Microsoft India Private Limited}{Hyderabad, India}{}{}\normalsize\vspace{2mm}
+
+\textbf{Azure App Services} : Azure App Service is a fully managed PaaS offering enabling developers to build, deploy, and scale web apps and APIs. Technical lead for a team of \textbf{7} engineers, driving architectural decisions and team-wide technical initiatives. Deliver features hands-on while mentoring engineers through design reviews, code reviews, and cross-functional collaboration. I have worked on below features
+
+\begin{itemize}
+\item \textbf{Horizontal Scaling of DNS zones} : Designed and implemented a regional DNS zone architecture to eliminate single point of failure in Azure App Service's global DNS registration system. Architected geo-sharded DNS infrastructure across \textbf{40+} Azure regions, decentralizing record management and improving service creation resilience. Orchestrated zero-downtime migration of \textbf{6M+} DNS records in live production using gradual rollout strategy, preventing global outages from zone failures or misconfiguration.
+\item \textbf{High-Scale Resource Health Monitoring for Azure App Service} : Architected and delivered a proactive dependency monitoring system that alerts \textbf{100k+} Azure customers when their App Service resources are impacted by downstream service outages. Designed a high-throughput data pipeline that captures snapshots of \textbf{1M+} web app resources and their dependency graphs every \textbf{12} hours, streaming this telemetry to Azure Resource Graph Explorer for real-time health correlation and customer alerting. Solved critical scalability challenges by engineering a resource-efficient snapshotting mechanism that operates within strict compute, database, and network constraints—enabling the system to process millions of resource states without degrading production performance. The platform now monitors a continuously growing base of \textbf{1M+} App Service resources, significantly improving customer incident response times and reducing mean time to resolution (MTTR) for dependency-related outages.
+\item \textbf{Backup and Restore} : As part of BCDR, I have designed and implemented Backup and Restore of app service allowing customers to backup and restore web applications easily. Additionally customers can clone a running app to a new app or a deployment slot for testing and staging purposes. This feature, extensively utilized in Azure App Services on a daily basis, provides invaluable support by enabling users to swiftly revert changes in case of application issues.
+
+\textbf{Technologies :} Distributed Systems, C\#.Net, Azure SQL, Azure DNS, Design Patterns, Microservices
+\end{itemize}
+\vspace{2mm}
+
+\cventry{March, 2015 -- Feb, 2020}{\designation{Computer Scientist-2}}{\Large Adobe Systems}{Bengaluru, India}{}{}\normalsize\vspace{2mm}
+
+\textbf{Adobe Notification System (ANS)} : Adobe Notification System (ANS)
+Designed and built critical features for Adobe's enterprise notification platform used by \textbf{65+} Creative, Experience, and Document Cloud products. Architected campaign notification system for Experience Cloud processing millions of promotional emails with distributed batching, throttling controls, bounce handling, and delivery analytics. Additionally owned group notifications, real-time alert delivery pipeline, and end-to-end localization support. 
+
+\textbf{Technologies :} Java, Amazon Web Services (DynamoDB, S3, SNS, Lambda, SQS, RDS, CloudWatch etc), Spring framework, Redis, Long Polling
+\vspace{2mm}
+
+\cventry{August, 2014 -- Feb, 2015}{\designation{Member of Technical Staff}}{\Large NetApp}{Bengaluru, India}{}{}\normalsize\vspace{2mm}
+Software developer working in Flex Array Virtualization (FAV) team. Work involved in developing storage stack which virtualizes and allows customers to attach third party storage systems to NetApp's storage system.
+\vspace{2mm}
+
+\cventry{July, 2012 -- July, 2014}{\designation{Software Developer}}{\Large{Texas Instruments}}{Bengaluru, India}{}{}\normalsize{}\vspace{2mm}
+Software framework developer for the next generation TI SOC platforms. The framework allows customers to quickly prototype and evaluate vision algorithms and create custom data flows involving Video capture, Video Processing and Video Display. Worked extensively in developing plug and play components in C/C++.
+\end{document}
